@@ -1,0 +1,52 @@
+{
+  "observacao": "Autenticacao e catalogo oficial de cupons dependem do banco web. O mobile preserva pedidos, catalogo de produtos e vinculos locais. Este backup nao e uma copia dos dados pessoais do ambiente.",
+  "usuarios": 0,
+  "sessoes": 0,
+  "cupons": 0,
+  "pedidos": 0,
+  "migrations": 8,
+  "banco": "pimburguer_mobile",
+  "tabelas": 10,
+  "validacoes_restauracao": [
+    {
+      "formato": "backup",
+      "aprovado": true,
+      "tabelas": 10,
+      "contagens": {
+        "cupons": 0,
+        "pedidos": 0,
+        "produtos": 7,
+        "usuarios": 0,
+        "usos_cupom": 0,
+        "itens_pedido": 0,
+        "cupons_cliente": 0,
+        "sessoes_acesso": 0,
+        "movimentacoes_pedido": 0,
+        "__EFMigrationsHistory": 8
+      }
+    },
+    {
+      "formato": "sql",
+      "aprovado": true,
+      "tabelas": 10,
+      "contagens": {
+        "cupons": 0,
+        "pedidos": 0,
+        "produtos": 7,
+        "usuarios": 0,
+        "usos_cupom": 0,
+        "itens_pedido": 0,
+        "cupons_cliente": 0,
+        "sessoes_acesso": 0,
+        "movimentacoes_pedido": 0,
+        "__EFMigrationsHistory": 8
+      }
+    }
+  ],
+  "produtos": 7,
+  "tipo": "Base inicial atualizada sem dados de clientes",
+  "fuso": "America/Sao_Paulo",
+  "postgresql": "18.6",
+  "data_referencia": "2026-11-09",
+  "tabelas_negocio": 9
+}

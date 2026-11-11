@@ -1,0 +1,15 @@
+{
+  "banco": "pimburguer_mobile",
+  "data_exportacao": "2026-11-09",
+  "postgresql": "18.6",
+  "produtos": 7,
+  "usuarios": 0,
+  "sessoes": 0,
+  "pedidos": 0,
+  "migrations": 7,
+  "observacao": "Backup inicial: estrutura e catálogo do app. Administrador de desenvolvimento criado pela API no primeiro início. Dados independentes do site.",
+  "sha256": {
+    "PIM_BURGUER_MOBILE_INICIAL.backup": "d038faeec45c8f574ab7975febc7e37e0e98743216607e369addcf2fce7f32f4",
+    "PIM_BURGUER_MOBILE_INICIAL.sql": "79dc8e124c2bcbf74d357e5e52499610e4df36f3a529efe4b30b6a326e90c8b2"
+  }
+}
