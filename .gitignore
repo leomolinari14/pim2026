@@ -1,0 +1,20 @@
+# Arquivos gerados e configurações específicas da máquina
+**/bin/
+**/obj/
+**/.vs/
+**/.idea/
+**/build/
+**/.dart_tool/
+**/.gradle/
+**/node_modules/
+**/coverage/
+**/local.properties
+**/key.properties
+**/*.user
+**/*.suo
+**/*.log
+**/*.jks
+**/*.keystore
+**/.env
+**/.env.*
+!**/.env.example
