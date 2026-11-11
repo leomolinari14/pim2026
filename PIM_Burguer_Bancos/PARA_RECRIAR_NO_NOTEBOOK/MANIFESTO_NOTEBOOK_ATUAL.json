@@ -1,0 +1,77 @@
+{
+  "validacoes": [
+    {
+      "canal": "WEB",
+      "contagens": {
+        "cupons": 1,
+        "pedidos": 5,
+        "produtos": 7,
+        "usuarios": 8,
+        "usos_cupom": 0,
+        "itens_pedido": 7,
+        "cupons_cliente": 1,
+        "sessoes_acesso": 11,
+        "movimentacoes_pedido": 10,
+        "__EFMigrationsHistory": 8
+      },
+      "formato": "backup",
+      "restauracao_aprovada": true
+    },
+    {
+      "canal": "WEB",
+      "contagens": {
+        "cupons": 1,
+        "pedidos": 5,
+        "produtos": 7,
+        "usuarios": 8,
+        "usos_cupom": 0,
+        "itens_pedido": 7,
+        "cupons_cliente": 1,
+        "sessoes_acesso": 11,
+        "movimentacoes_pedido": 10,
+        "__EFMigrationsHistory": 8
+      },
+      "formato": "sql",
+      "restauracao_aprovada": true
+    },
+    {
+      "canal": "MOBILE",
+      "contagens": {
+        "cupons": 0,
+        "pedidos": 1,
+        "produtos": 7,
+        "usuarios": 3,
+        "usos_cupom": 0,
+        "itens_pedido": 1,
+        "cupons_cliente": 0,
+        "sessoes_acesso": 2,
+        "movimentacoes_pedido": 0,
+        "__EFMigrationsHistory": 8
+      },
+      "formato": "backup",
+      "restauracao_aprovada": true
+    },
+    {
+      "canal": "MOBILE",
+      "contagens": {
+        "cupons": 0,
+        "pedidos": 1,
+        "produtos": 7,
+        "usuarios": 3,
+        "usos_cupom": 0,
+        "itens_pedido": 1,
+        "cupons_cliente": 0,
+        "sessoes_acesso": 2,
+        "movimentacoes_pedido": 0,
+        "__EFMigrationsHistory": 8
+      },
+      "formato": "sql",
+      "restauracao_aprovada": true
+    }
+  ],
+  "fuso": "America/Sao_Paulo",
+  "observacao": "Contem cadastros e pedidos do ambiente. Nenhuma senha de conexao acompanha o pacote. Para anexar ao relatorio, utilizar os arquivos de estrutura ou a base inicial limpa em MOBILE/DOCUMENTACAO_ATUALIZADA.",
+  "tipo": "Snapshot completo dos dois bancos para transferencia ao notebook",
+  "data_referencia": "2026-11-09",
+  "postgresql": "18.6"
+}
