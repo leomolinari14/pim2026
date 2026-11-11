@@ -1,0 +1,34 @@
+{
+  "gerado_em": "2026-11-08T18:45:17.3028100-03:00",
+  "concluido_em": "2026-11-08T18:45:17.6658718-03:00",
+  "banco_origem": "pimburguer_v2",
+  "postgresql": "18.6",
+  "backup": "PIM_BURGUER_V2_COMPLETO.backup",
+  "backup_sha256": "168BEC5F84FD97CAFEE27F0C3E6FBD258542164045F1EEDE4EAA837E018C3902",
+  "sql": "PIM_BURGUER_V2_COMPLETO.sql",
+  "sql_sha256": "A210C46D8B1273E7380F38D6C5B359A7F5E4BCBBB31467D7662887201214EE61",
+  "registros": {
+    "produtos": 7,
+    "usuarios": 6,
+    "sessoes_acesso": 8,
+    "pedidos": 5,
+    "itens_pedido": 7,
+    "cupons": 0,
+    "usos_cupom": 0,
+    "movimentacoes_pedido": 10,
+    "migrations": 7
+  },
+  "imagens_enviadas": [
+    {
+      "arquivo": "ImagensProdutos/b342cd233fc543cb9720f705d1b64a5d.png",
+      "sha256": "B374F6B91DDCFA2541BAA298AD23F9892B3D66020E0A4F8F60B898905D01E6B6",
+      "bytes": 741693
+    }
+  ],
+  "observacao": "Backup completo da estrutura, dados e sequências. As imagens devem acompanhar a pasta do projeto. As contagens pressupõem que não houve gravações durante a exportação.",
+  "canal": "web",
+  "snapshot_original_em": "2026-11-04T15:14:55.096588+00:00",
+  "estrutura_migrations": 7,
+  "tabelas_totais": 9,
+  "verificacao": "Backup e SQL restaurados em bancos isolados; todos os registros das oito tabelas de negócio coincidem com o snapshot web original. Retirada somente a infraestrutura de sincronização."
+}

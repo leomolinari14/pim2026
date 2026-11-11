@@ -1,0 +1,23 @@
+{
+  "gerado_em": "2026-11-09T15:20:43.5800231-03:00",
+  "banco_origem": "pimburguer_apresentacao",
+  "porta_origem": 65434,
+  "ferramenta": "pg_dump (PostgreSQL) 18.6",
+  "backup": "PIM_BURGUER_PARA_NOTEBOOK.backup",
+  "backup_sha256": "B9C747E5CC9193A7E9FB7BF2574F8A75C7F7611224B102CECF2218F7121A42D4",
+  "sql": "PIM_BURGUER_PARA_NOTEBOOK.sql",
+  "sql_sha256": "8802E3E66DCBE0E1CDB0D2DE592213995695C9113E8ABAEADCEA6EBCEE45ADCE",
+  "observacao": "Exportação atual do banco preparado; o SQL é derivado do mesmo arquivo de backup. As imagens estão em WEB/Uploads. Não inclui a senha do servidor nem a chave JWT.",
+  "registros": {
+    "produtos": 7,
+    "usuarios": 7,
+    "sessoes_acesso": 8,
+    "pedidos": 5,
+    "itens_pedido": 7,
+    "cupons": 0,
+    "usos_cupom": 0,
+    "movimentacoes_pedido": 10,
+    "__EFMigrationsHistory": 7
+  },
+  "validacao": "Backup e SQL restaurados em dois bancos isolados PostgreSQL 18; contagens das nove tabelas coincidem e as imagens de produtos acompanham WEB."
+}
