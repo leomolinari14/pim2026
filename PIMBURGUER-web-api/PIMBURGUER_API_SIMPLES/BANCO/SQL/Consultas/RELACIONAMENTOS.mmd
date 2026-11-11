@@ -1,0 +1,11 @@
+erDiagram
+  usuarios ||--o{ pedidos : realiza
+  usuarios ||--o{ sessoes_acesso : possui
+  pedidos ||--|{ itens_pedido : contem
+  produtos ||--o{ itens_pedido : referencia
+  cupons o|--o{ pedidos : aplica
+  usuarios ||--o{ usos_cupom : utiliza
+  cupons ||--o{ usos_cupom : registra
+  pedidos ||--o| usos_cupom : registra
+  pedidos ||--o{ movimentacoes_pedido : audita
+  usuarios ||--o{ movimentacoes_pedido : administrador

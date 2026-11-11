@@ -1,0 +1,87 @@
+table_name,column_name,ordinal_position,data_type,udt_name,is_nullable,column_default,character_maximum_length,numeric_precision,numeric_scale
+__EFMigrationsHistory,MigrationId,1,character varying,varchar,NO,,150,,
+__EFMigrationsHistory,ProductVersion,2,character varying,varchar,NO,,32,,
+cupons,id,1,integer,int4,NO,,,32,0
+cupons,codigo,2,character varying,varchar,NO,,24,,
+cupons,tipo,3,character varying,varchar,NO,,12,,
+cupons,valor,4,numeric,numeric,NO,,,10,2
+cupons,compra_minima,5,numeric,numeric,NO,,,10,2
+cupons,valido_de,6,date,date,NO,,,,
+cupons,valido_ate,7,date,date,NO,,,,
+cupons,limite_usos,8,integer,int4,YES,,,32,0
+cupons,uma_vez_por_cliente,9,boolean,bool,NO,,,,
+cupons,divulgar,10,boolean,bool,NO,,,,
+cupons,ativo,11,boolean,bool,NO,,,,
+itens_pedido,id,1,integer,int4,NO,,,32,0
+itens_pedido,pedido_id,2,uuid,uuid,NO,,,,
+itens_pedido,produto_id,3,integer,int4,NO,,,32,0
+itens_pedido,nome_produto,4,character varying,varchar,NO,,120,,
+itens_pedido,quantidade,5,integer,int4,NO,,,32,0
+itens_pedido,preco_unitario,6,numeric,numeric,NO,,,10,2
+itens_pedido,subtotal,7,numeric,numeric,NO,,,10,2
+movimentacoes_pedido,id,1,integer,int4,NO,,,32,0
+movimentacoes_pedido,pedido_id,2,uuid,uuid,NO,,,,
+movimentacoes_pedido,administrador_id,3,uuid,uuid,NO,,,,
+movimentacoes_pedido,criado_em,4,timestamp with time zone,timestamptz,NO,,,,
+movimentacoes_pedido,status_anterior,5,character varying,varchar,NO,,40,,
+movimentacoes_pedido,status_novo,6,character varying,varchar,NO,,40,,
+movimentacoes_pedido,pago_anterior,7,boolean,bool,NO,,,,
+movimentacoes_pedido,pago_novo,8,boolean,bool,NO,,,,
+pedidos,id,1,uuid,uuid,NO,,,,
+pedidos,criado_em,2,timestamp with time zone,timestamptz,NO,,,,
+pedidos,status,3,character varying,varchar,NO,,40,,
+pedidos,nome_cliente,4,character varying,varchar,NO,,100,,
+pedidos,telefone,5,character varying,varchar,NO,,20,,
+pedidos,recebimento,6,character varying,varchar,NO,,10,,
+pedidos,cep,7,character varying,varchar,YES,,8,,
+pedidos,logradouro,8,character varying,varchar,YES,,160,,
+pedidos,numero,9,character varying,varchar,YES,,12,,
+pedidos,complemento,10,character varying,varchar,YES,,80,,
+pedidos,bairro,11,character varying,varchar,YES,,80,,
+pedidos,cidade,12,character varying,varchar,YES,,80,,
+pedidos,uf,13,character varying,varchar,YES,,2,,
+pedidos,pagamento,14,character varying,varchar,NO,,20,,
+pedidos,troco_para,15,numeric,numeric,YES,,,10,2
+pedidos,observacoes,16,character varying,varchar,YES,,500,,
+pedidos,subtotal,17,numeric,numeric,NO,,,10,2
+pedidos,taxa_entrega,18,numeric,numeric,NO,,,10,2
+pedidos,total,19,numeric,numeric,NO,,,10,2
+pedidos,whatsapp_loja,20,character varying,varchar,NO,,13,,
+pedidos,token_hash,21,character varying,varchar,NO,,64,,
+pedidos,requisicao_hash,22,character varying,varchar,NO,,64,,
+pedidos,codigo_cupom,23,character varying,varchar,YES,,24,,
+pedidos,cupom_id,24,integer,int4,YES,,,32,0
+pedidos,desconto,25,numeric,numeric,NO,0.0,,10,2
+pedidos,pago,26,boolean,bool,NO,false,,,
+pedidos,pago_em,27,timestamp with time zone,timestamptz,YES,,,,
+pedidos,usuario_id,28,uuid,uuid,YES,,,,
+pedidos,cpf_cliente,29,character varying,varchar,YES,,11,,
+produtos,id,1,integer,int4,NO,,,32,0
+produtos,nome,2,character varying,varchar,NO,,120,,
+produtos,descricao,3,character varying,varchar,NO,,500,,
+produtos,preco,4,numeric,numeric,NO,,,10,2
+produtos,categoria,5,character varying,varchar,NO,,40,,
+produtos,imagem,6,character varying,varchar,NO,,200,,
+produtos,ativo,7,boolean,bool,NO,,,,
+produtos,removido,8,boolean,bool,NO,false,,,
+sessoes_acesso,id,1,uuid,uuid,NO,,,,
+sessoes_acesso,usuario_id,2,uuid,uuid,NO,,,,
+sessoes_acesso,token_hash,3,character varying,varchar,NO,,64,,
+sessoes_acesso,expira_em,4,timestamp with time zone,timestamptz,NO,,,,
+usos_cupom,id,1,integer,int4,NO,,,32,0
+usos_cupom,cupom_id,2,integer,int4,NO,,,32,0
+usos_cupom,usuario_id,3,uuid,uuid,NO,,,,
+usos_cupom,pedido_id,4,uuid,uuid,NO,,,,
+usuarios,id,1,uuid,uuid,NO,,,,
+usuarios,nome,2,character varying,varchar,NO,,100,,
+usuarios,email,3,character varying,varchar,YES,,180,,
+usuarios,email_normalizado,4,character varying,varchar,YES,,180,,
+usuarios,telefone,5,character varying,varchar,NO,,20,,
+usuarios,senha_hash,6,character varying,varchar,NO,,500,,
+usuarios,perfil,7,character varying,varchar,NO,,20,,
+usuarios,ativo,8,boolean,bool,NO,,,,
+usuarios,criado_em,9,timestamp with time zone,timestamptz,NO,,,,
+usuarios,falhas_login,10,integer,int4,NO,,,32,0
+usuarios,bloqueado_ate,11,timestamp with time zone,timestamptz,YES,,,,
+usuarios,nome_usuario,12,character varying,varchar,YES,,60,,
+usuarios,cpf,13,character varying,varchar,YES,,11,,

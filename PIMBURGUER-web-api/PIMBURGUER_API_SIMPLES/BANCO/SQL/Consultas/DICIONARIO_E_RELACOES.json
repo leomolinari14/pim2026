@@ -1,0 +1,1784 @@
+{
+  "versao": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit",
+  "colunas": [
+    {
+      "table_name": "__EFMigrationsHistory",
+      "column_name": "MigrationId",
+      "ordinal_position": 1,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 150,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "__EFMigrationsHistory",
+      "column_name": "ProductVersion",
+      "ordinal_position": 2,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 32,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "id",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "codigo",
+      "ordinal_position": 2,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 24,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "tipo",
+      "ordinal_position": 3,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 12,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "valor",
+      "ordinal_position": 4,
+      "data_type": "numeric",
+      "udt_name": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "compra_minima",
+      "ordinal_position": 5,
+      "data_type": "numeric",
+      "udt_name": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "valido_de",
+      "ordinal_position": 6,
+      "data_type": "date",
+      "udt_name": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "valido_ate",
+      "ordinal_position": 7,
+      "data_type": "date",
+      "udt_name": "date",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "limite_usos",
+      "ordinal_position": 8,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "uma_vez_por_cliente",
+      "ordinal_position": 9,
+      "data_type": "boolean",
+      "udt_name": "bool",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "divulgar",
+      "ordinal_position": 10,
+      "data_type": "boolean",
+      "udt_name": "bool",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "cupons",
+      "column_name": "ativo",
+      "ordinal_position": 11,
+      "data_type": "boolean",
+      "udt_name": "bool",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "itens_pedido",
+      "column_name": "id",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "itens_pedido",
+      "column_name": "pedido_id",
+      "ordinal_position": 2,
+      "data_type": "uuid",
+      "udt_name": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "itens_pedido",
+      "column_name": "produto_id",
+      "ordinal_position": 3,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "itens_pedido",
+      "column_name": "nome_produto",
+      "ordinal_position": 4,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 120,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "itens_pedido",
+      "column_name": "quantidade",
+      "ordinal_position": 5,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "itens_pedido",
+      "column_name": "preco_unitario",
+      "ordinal_position": 6,
+      "data_type": "numeric",
+      "udt_name": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "itens_pedido",
+      "column_name": "subtotal",
+      "ordinal_position": 7,
+      "data_type": "numeric",
+      "udt_name": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "movimentacoes_pedido",
+      "column_name": "id",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "movimentacoes_pedido",
+      "column_name": "pedido_id",
+      "ordinal_position": 2,
+      "data_type": "uuid",
+      "udt_name": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "movimentacoes_pedido",
+      "column_name": "administrador_id",
+      "ordinal_position": 3,
+      "data_type": "uuid",
+      "udt_name": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "movimentacoes_pedido",
+      "column_name": "criado_em",
+      "ordinal_position": 4,
+      "data_type": "timestamp with time zone",
+      "udt_name": "timestamptz",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "movimentacoes_pedido",
+      "column_name": "status_anterior",
+      "ordinal_position": 5,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 40,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "movimentacoes_pedido",
+      "column_name": "status_novo",
+      "ordinal_position": 6,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 40,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "movimentacoes_pedido",
+      "column_name": "pago_anterior",
+      "ordinal_position": 7,
+      "data_type": "boolean",
+      "udt_name": "bool",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "movimentacoes_pedido",
+      "column_name": "pago_novo",
+      "ordinal_position": 8,
+      "data_type": "boolean",
+      "udt_name": "bool",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "id",
+      "ordinal_position": 1,
+      "data_type": "uuid",
+      "udt_name": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "criado_em",
+      "ordinal_position": 2,
+      "data_type": "timestamp with time zone",
+      "udt_name": "timestamptz",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "status",
+      "ordinal_position": 3,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 40,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "nome_cliente",
+      "ordinal_position": 4,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 100,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "telefone",
+      "ordinal_position": 5,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 20,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "recebimento",
+      "ordinal_position": 6,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 10,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "cep",
+      "ordinal_position": 7,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 8,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "logradouro",
+      "ordinal_position": 8,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 160,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "numero",
+      "ordinal_position": 9,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 12,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "complemento",
+      "ordinal_position": 10,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 80,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "bairro",
+      "ordinal_position": 11,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 80,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "cidade",
+      "ordinal_position": 12,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 80,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "uf",
+      "ordinal_position": 13,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 2,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "pagamento",
+      "ordinal_position": 14,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 20,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "troco_para",
+      "ordinal_position": 15,
+      "data_type": "numeric",
+      "udt_name": "numeric",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "observacoes",
+      "ordinal_position": 16,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 500,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "subtotal",
+      "ordinal_position": 17,
+      "data_type": "numeric",
+      "udt_name": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "taxa_entrega",
+      "ordinal_position": 18,
+      "data_type": "numeric",
+      "udt_name": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "total",
+      "ordinal_position": 19,
+      "data_type": "numeric",
+      "udt_name": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "whatsapp_loja",
+      "ordinal_position": 20,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 13,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "token_hash",
+      "ordinal_position": 21,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 64,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "requisicao_hash",
+      "ordinal_position": 22,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 64,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "codigo_cupom",
+      "ordinal_position": 23,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 24,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "cupom_id",
+      "ordinal_position": 24,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "desconto",
+      "ordinal_position": 25,
+      "data_type": "numeric",
+      "udt_name": "numeric",
+      "is_nullable": "NO",
+      "column_default": "0.0",
+      "character_maximum_length": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "pago",
+      "ordinal_position": 26,
+      "data_type": "boolean",
+      "udt_name": "bool",
+      "is_nullable": "NO",
+      "column_default": "false",
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "pago_em",
+      "ordinal_position": 27,
+      "data_type": "timestamp with time zone",
+      "udt_name": "timestamptz",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "usuario_id",
+      "ordinal_position": 28,
+      "data_type": "uuid",
+      "udt_name": "uuid",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "pedidos",
+      "column_name": "cpf_cliente",
+      "ordinal_position": 29,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 11,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "produtos",
+      "column_name": "id",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "produtos",
+      "column_name": "nome",
+      "ordinal_position": 2,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 120,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "produtos",
+      "column_name": "descricao",
+      "ordinal_position": 3,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 500,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "produtos",
+      "column_name": "preco",
+      "ordinal_position": 4,
+      "data_type": "numeric",
+      "udt_name": "numeric",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 10,
+      "numeric_scale": 2
+    },
+    {
+      "table_name": "produtos",
+      "column_name": "categoria",
+      "ordinal_position": 5,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 40,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "produtos",
+      "column_name": "imagem",
+      "ordinal_position": 6,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 200,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "produtos",
+      "column_name": "ativo",
+      "ordinal_position": 7,
+      "data_type": "boolean",
+      "udt_name": "bool",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "produtos",
+      "column_name": "removido",
+      "ordinal_position": 8,
+      "data_type": "boolean",
+      "udt_name": "bool",
+      "is_nullable": "NO",
+      "column_default": "false",
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "sessoes_acesso",
+      "column_name": "id",
+      "ordinal_position": 1,
+      "data_type": "uuid",
+      "udt_name": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "sessoes_acesso",
+      "column_name": "usuario_id",
+      "ordinal_position": 2,
+      "data_type": "uuid",
+      "udt_name": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "sessoes_acesso",
+      "column_name": "token_hash",
+      "ordinal_position": 3,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 64,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "sessoes_acesso",
+      "column_name": "expira_em",
+      "ordinal_position": 4,
+      "data_type": "timestamp with time zone",
+      "udt_name": "timestamptz",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usos_cupom",
+      "column_name": "id",
+      "ordinal_position": 1,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "usos_cupom",
+      "column_name": "cupom_id",
+      "ordinal_position": 2,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "usos_cupom",
+      "column_name": "usuario_id",
+      "ordinal_position": 3,
+      "data_type": "uuid",
+      "udt_name": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usos_cupom",
+      "column_name": "pedido_id",
+      "ordinal_position": 4,
+      "data_type": "uuid",
+      "udt_name": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "id",
+      "ordinal_position": 1,
+      "data_type": "uuid",
+      "udt_name": "uuid",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "nome",
+      "ordinal_position": 2,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 100,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "email",
+      "ordinal_position": 3,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 180,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "email_normalizado",
+      "ordinal_position": 4,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 180,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "telefone",
+      "ordinal_position": 5,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 20,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "senha_hash",
+      "ordinal_position": 6,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 500,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "perfil",
+      "ordinal_position": 7,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": 20,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "ativo",
+      "ordinal_position": 8,
+      "data_type": "boolean",
+      "udt_name": "bool",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "criado_em",
+      "ordinal_position": 9,
+      "data_type": "timestamp with time zone",
+      "udt_name": "timestamptz",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "falhas_login",
+      "ordinal_position": 10,
+      "data_type": "integer",
+      "udt_name": "int4",
+      "is_nullable": "NO",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": 32,
+      "numeric_scale": 0
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "bloqueado_ate",
+      "ordinal_position": 11,
+      "data_type": "timestamp with time zone",
+      "udt_name": "timestamptz",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": null,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "nome_usuario",
+      "ordinal_position": 12,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 60,
+      "numeric_precision": null,
+      "numeric_scale": null
+    },
+    {
+      "table_name": "usuarios",
+      "column_name": "cpf",
+      "ordinal_position": 13,
+      "data_type": "character varying",
+      "udt_name": "varchar",
+      "is_nullable": "YES",
+      "column_default": null,
+      "character_maximum_length": 11,
+      "numeric_precision": null,
+      "numeric_scale": null
+    }
+  ],
+  "relacionamentos": [
+    {
+      "tabela": "\"__EFMigrationsHistory\"",
+      "nome": "PK___EFMigrationsHistory",
+      "definicao": "PRIMARY KEY (\"MigrationId\")"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "PK_cupons",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "ck_cupons_validade",
+      "definicao": "CHECK (((valido_ate >= valido_de) AND ((limite_usos IS NULL) OR (limite_usos > 0))))"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "ck_cupons_valor",
+      "definicao": "CHECK (((valor > (0)::numeric) AND (compra_minima >= (0)::numeric) AND ((tipo)::text = ANY (ARRAY[('Percentual'::character varying)::text, ('ValorFixo'::character varying)::text])) AND (((tipo)::text <> 'Percentual'::text) OR (valor <= (100)::numeric))))"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "FK_itens_pedido_pedidos_pedido_id",
+      "definicao": "FOREIGN KEY (pedido_id) REFERENCES pedidos(id) ON DELETE CASCADE"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "FK_itens_pedido_produtos_produto_id",
+      "definicao": "FOREIGN KEY (produto_id) REFERENCES produtos(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "PK_itens_pedido",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "ck_itens_pedido_quantidade",
+      "definicao": "CHECK (((quantidade >= 1) AND (quantidade <= 20)))"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "ck_itens_pedido_valores",
+      "definicao": "CHECK (((preco_unitario > (0)::numeric) AND (subtotal = ((quantidade)::numeric * preco_unitario))))"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "FK_movimentacoes_pedido_pedidos_pedido_id",
+      "definicao": "FOREIGN KEY (pedido_id) REFERENCES pedidos(id) ON DELETE CASCADE"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "FK_movimentacoes_pedido_usuarios_administrador_id",
+      "definicao": "FOREIGN KEY (administrador_id) REFERENCES usuarios(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "PK_movimentacoes_pedido",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "FK_pedidos_cupons_cupom_id",
+      "definicao": "FOREIGN KEY (cupom_id) REFERENCES cupons(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "FK_pedidos_usuarios_usuario_id",
+      "definicao": "FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "PK_pedidos",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "ck_pedidos_recebimento",
+      "definicao": "CHECK (((recebimento)::text = ANY (ARRAY[('Retirada'::character varying)::text, ('Entrega'::character varying)::text])))"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "ck_pedidos_valores",
+      "definicao": "CHECK (((subtotal > (0)::numeric) AND (taxa_entrega >= (0)::numeric) AND (desconto >= (0)::numeric) AND (desconto <= subtotal) AND (total = ((subtotal + taxa_entrega) - desconto))))"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "PK_produtos",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "ck_produtos_preco_positivo",
+      "definicao": "CHECK ((preco > (0)::numeric))"
+    },
+    {
+      "tabela": "sessoes_acesso",
+      "nome": "FK_sessoes_acesso_usuarios_usuario_id",
+      "definicao": "FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE"
+    },
+    {
+      "tabela": "sessoes_acesso",
+      "nome": "PK_sessoes_acesso",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "FK_usos_cupom_cupons_cupom_id",
+      "definicao": "FOREIGN KEY (cupom_id) REFERENCES cupons(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "FK_usos_cupom_pedidos_pedido_id",
+      "definicao": "FOREIGN KEY (pedido_id) REFERENCES pedidos(id) ON DELETE CASCADE"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "FK_usos_cupom_usuarios_usuario_id",
+      "definicao": "FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "PK_usos_cupom",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "PK_usuarios",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "ck_usuarios_perfil",
+      "definicao": "CHECK (((perfil)::text = ANY (ARRAY[('Cliente'::character varying)::text, ('Administrador'::character varying)::text])))"
+    }
+  ],
+  "indices": [
+    {
+      "tablename": "__EFMigrationsHistory",
+      "indexname": "PK___EFMigrationsHistory",
+      "indexdef": "CREATE UNIQUE INDEX \"PK___EFMigrationsHistory\" ON public.\"__EFMigrationsHistory\" USING btree (\"MigrationId\")"
+    },
+    {
+      "tablename": "cupons",
+      "indexname": "IX_cupons_codigo",
+      "indexdef": "CREATE UNIQUE INDEX \"IX_cupons_codigo\" ON public.cupons USING btree (codigo)"
+    },
+    {
+      "tablename": "cupons",
+      "indexname": "PK_cupons",
+      "indexdef": "CREATE UNIQUE INDEX \"PK_cupons\" ON public.cupons USING btree (id)"
+    },
+    {
+      "tablename": "itens_pedido",
+      "indexname": "IX_itens_pedido_pedido_id_produto_id",
+      "indexdef": "CREATE UNIQUE INDEX \"IX_itens_pedido_pedido_id_produto_id\" ON public.itens_pedido USING btree (pedido_id, produto_id)"
+    },
+    {
+      "tablename": "itens_pedido",
+      "indexname": "IX_itens_pedido_produto_id",
+      "indexdef": "CREATE INDEX \"IX_itens_pedido_produto_id\" ON public.itens_pedido USING btree (produto_id)"
+    },
+    {
+      "tablename": "itens_pedido",
+      "indexname": "PK_itens_pedido",
+      "indexdef": "CREATE UNIQUE INDEX \"PK_itens_pedido\" ON public.itens_pedido USING btree (id)"
+    },
+    {
+      "tablename": "movimentacoes_pedido",
+      "indexname": "IX_movimentacoes_pedido_administrador_id",
+      "indexdef": "CREATE INDEX \"IX_movimentacoes_pedido_administrador_id\" ON public.movimentacoes_pedido USING btree (administrador_id)"
+    },
+    {
+      "tablename": "movimentacoes_pedido",
+      "indexname": "IX_movimentacoes_pedido_pedido_id",
+      "indexdef": "CREATE INDEX \"IX_movimentacoes_pedido_pedido_id\" ON public.movimentacoes_pedido USING btree (pedido_id)"
+    },
+    {
+      "tablename": "movimentacoes_pedido",
+      "indexname": "PK_movimentacoes_pedido",
+      "indexdef": "CREATE UNIQUE INDEX \"PK_movimentacoes_pedido\" ON public.movimentacoes_pedido USING btree (id)"
+    },
+    {
+      "tablename": "pedidos",
+      "indexname": "IX_pedidos_criado_em",
+      "indexdef": "CREATE INDEX \"IX_pedidos_criado_em\" ON public.pedidos USING btree (criado_em)"
+    },
+    {
+      "tablename": "pedidos",
+      "indexname": "IX_pedidos_cupom_id",
+      "indexdef": "CREATE INDEX \"IX_pedidos_cupom_id\" ON public.pedidos USING btree (cupom_id)"
+    },
+    {
+      "tablename": "pedidos",
+      "indexname": "IX_pedidos_usuario_id",
+      "indexdef": "CREATE INDEX \"IX_pedidos_usuario_id\" ON public.pedidos USING btree (usuario_id)"
+    },
+    {
+      "tablename": "pedidos",
+      "indexname": "PK_pedidos",
+      "indexdef": "CREATE UNIQUE INDEX \"PK_pedidos\" ON public.pedidos USING btree (id)"
+    },
+    {
+      "tablename": "produtos",
+      "indexname": "PK_produtos",
+      "indexdef": "CREATE UNIQUE INDEX \"PK_produtos\" ON public.produtos USING btree (id)"
+    },
+    {
+      "tablename": "sessoes_acesso",
+      "indexname": "IX_sessoes_acesso_token_hash",
+      "indexdef": "CREATE UNIQUE INDEX \"IX_sessoes_acesso_token_hash\" ON public.sessoes_acesso USING btree (token_hash)"
+    },
+    {
+      "tablename": "sessoes_acesso",
+      "indexname": "IX_sessoes_acesso_usuario_id",
+      "indexdef": "CREATE INDEX \"IX_sessoes_acesso_usuario_id\" ON public.sessoes_acesso USING btree (usuario_id)"
+    },
+    {
+      "tablename": "sessoes_acesso",
+      "indexname": "PK_sessoes_acesso",
+      "indexdef": "CREATE UNIQUE INDEX \"PK_sessoes_acesso\" ON public.sessoes_acesso USING btree (id)"
+    },
+    {
+      "tablename": "usos_cupom",
+      "indexname": "IX_usos_cupom_cupom_id_usuario_id",
+      "indexdef": "CREATE INDEX \"IX_usos_cupom_cupom_id_usuario_id\" ON public.usos_cupom USING btree (cupom_id, usuario_id)"
+    },
+    {
+      "tablename": "usos_cupom",
+      "indexname": "IX_usos_cupom_pedido_id",
+      "indexdef": "CREATE UNIQUE INDEX \"IX_usos_cupom_pedido_id\" ON public.usos_cupom USING btree (pedido_id)"
+    },
+    {
+      "tablename": "usos_cupom",
+      "indexname": "IX_usos_cupom_usuario_id",
+      "indexdef": "CREATE INDEX \"IX_usos_cupom_usuario_id\" ON public.usos_cupom USING btree (usuario_id)"
+    },
+    {
+      "tablename": "usos_cupom",
+      "indexname": "PK_usos_cupom",
+      "indexdef": "CREATE UNIQUE INDEX \"PK_usos_cupom\" ON public.usos_cupom USING btree (id)"
+    },
+    {
+      "tablename": "usuarios",
+      "indexname": "IX_usuarios_email_normalizado",
+      "indexdef": "CREATE UNIQUE INDEX \"IX_usuarios_email_normalizado\" ON public.usuarios USING btree (email_normalizado)"
+    },
+    {
+      "tablename": "usuarios",
+      "indexname": "IX_usuarios_nome_usuario",
+      "indexdef": "CREATE UNIQUE INDEX \"IX_usuarios_nome_usuario\" ON public.usuarios USING btree (nome_usuario)"
+    },
+    {
+      "tablename": "usuarios",
+      "indexname": "PK_usuarios",
+      "indexdef": "CREATE UNIQUE INDEX \"PK_usuarios\" ON public.usuarios USING btree (id)"
+    }
+  ],
+  "contagens": {
+    "produtos": 7,
+    "usuarios": 6,
+    "sessoes_acesso": 8,
+    "pedidos": 5,
+    "itens_pedido": 7,
+    "cupons": 0,
+    "usos_cupom": 0,
+    "movimentacoes_pedido": 10,
+    "migrations": 7
+  },
+  "migrations": [
+    "20261006190220_CriarCatalogoInicial",
+    "20261006203634_CriarPedidos",
+    "20261007151227_CriarContasPaineisECupons",
+    "20261007174342_AdicionarUsuarioAdministrador",
+    "20261028230119_AdicionarCpfCliente",
+    "20261103230000_SepararBancosIntegracao",
+    "20261108000000_RemoverIntegracaoMobile"
+  ],
+  "restricoes": [
+    {
+      "tabela": "__EFMigrationsHistory",
+      "nome": "PK___EFMigrationsHistory",
+      "definicao": "PRIMARY KEY (\"MigrationId\")"
+    },
+    {
+      "tabela": "__EFMigrationsHistory",
+      "nome": "__EFMigrationsHistory_MigrationId_not_null",
+      "definicao": "NOT NULL \"MigrationId\""
+    },
+    {
+      "tabela": "__EFMigrationsHistory",
+      "nome": "__EFMigrationsHistory_ProductVersion_not_null",
+      "definicao": "NOT NULL \"ProductVersion\""
+    },
+    {
+      "tabela": "cupons",
+      "nome": "PK_cupons",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "ck_cupons_validade",
+      "definicao": "CHECK (((valido_ate >= valido_de) AND ((limite_usos IS NULL) OR (limite_usos > 0))))"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "ck_cupons_valor",
+      "definicao": "CHECK (((valor > (0)::numeric) AND (compra_minima >= (0)::numeric) AND ((tipo)::text = ANY (ARRAY[('Percentual'::character varying)::text, ('ValorFixo'::character varying)::text])) AND (((tipo)::text <> 'Percentual'::text) OR (valor <= (100)::numeric))))"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "cupons_ativo_not_null",
+      "definicao": "NOT NULL ativo"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "cupons_codigo_not_null",
+      "definicao": "NOT NULL codigo"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "cupons_compra_minima_not_null",
+      "definicao": "NOT NULL compra_minima"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "cupons_divulgar_not_null",
+      "definicao": "NOT NULL divulgar"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "cupons_id_not_null",
+      "definicao": "NOT NULL id"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "cupons_tipo_not_null",
+      "definicao": "NOT NULL tipo"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "cupons_uma_vez_por_cliente_not_null",
+      "definicao": "NOT NULL uma_vez_por_cliente"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "cupons_valido_ate_not_null",
+      "definicao": "NOT NULL valido_ate"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "cupons_valido_de_not_null",
+      "definicao": "NOT NULL valido_de"
+    },
+    {
+      "tabela": "cupons",
+      "nome": "cupons_valor_not_null",
+      "definicao": "NOT NULL valor"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "FK_itens_pedido_pedidos_pedido_id",
+      "definicao": "FOREIGN KEY (pedido_id) REFERENCES pedidos(id) ON DELETE CASCADE"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "FK_itens_pedido_produtos_produto_id",
+      "definicao": "FOREIGN KEY (produto_id) REFERENCES produtos(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "PK_itens_pedido",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "ck_itens_pedido_quantidade",
+      "definicao": "CHECK (((quantidade >= 1) AND (quantidade <= 20)))"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "ck_itens_pedido_valores",
+      "definicao": "CHECK (((preco_unitario > (0)::numeric) AND (subtotal = ((quantidade)::numeric * preco_unitario))))"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "itens_pedido_id_not_null",
+      "definicao": "NOT NULL id"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "itens_pedido_nome_produto_not_null",
+      "definicao": "NOT NULL nome_produto"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "itens_pedido_pedido_id_not_null",
+      "definicao": "NOT NULL pedido_id"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "itens_pedido_preco_unitario_not_null",
+      "definicao": "NOT NULL preco_unitario"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "itens_pedido_produto_id_not_null",
+      "definicao": "NOT NULL produto_id"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "itens_pedido_quantidade_not_null",
+      "definicao": "NOT NULL quantidade"
+    },
+    {
+      "tabela": "itens_pedido",
+      "nome": "itens_pedido_subtotal_not_null",
+      "definicao": "NOT NULL subtotal"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "FK_movimentacoes_pedido_pedidos_pedido_id",
+      "definicao": "FOREIGN KEY (pedido_id) REFERENCES pedidos(id) ON DELETE CASCADE"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "FK_movimentacoes_pedido_usuarios_administrador_id",
+      "definicao": "FOREIGN KEY (administrador_id) REFERENCES usuarios(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "PK_movimentacoes_pedido",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "movimentacoes_pedido_administrador_id_not_null",
+      "definicao": "NOT NULL administrador_id"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "movimentacoes_pedido_criado_em_not_null",
+      "definicao": "NOT NULL criado_em"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "movimentacoes_pedido_id_not_null",
+      "definicao": "NOT NULL id"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "movimentacoes_pedido_pago_anterior_not_null",
+      "definicao": "NOT NULL pago_anterior"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "movimentacoes_pedido_pago_novo_not_null",
+      "definicao": "NOT NULL pago_novo"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "movimentacoes_pedido_pedido_id_not_null",
+      "definicao": "NOT NULL pedido_id"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "movimentacoes_pedido_status_anterior_not_null",
+      "definicao": "NOT NULL status_anterior"
+    },
+    {
+      "tabela": "movimentacoes_pedido",
+      "nome": "movimentacoes_pedido_status_novo_not_null",
+      "definicao": "NOT NULL status_novo"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "FK_pedidos_cupons_cupom_id",
+      "definicao": "FOREIGN KEY (cupom_id) REFERENCES cupons(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "FK_pedidos_usuarios_usuario_id",
+      "definicao": "FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "PK_pedidos",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "ck_pedidos_recebimento",
+      "definicao": "CHECK (((recebimento)::text = ANY (ARRAY[('Retirada'::character varying)::text, ('Entrega'::character varying)::text])))"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "ck_pedidos_valores",
+      "definicao": "CHECK (((subtotal > (0)::numeric) AND (taxa_entrega >= (0)::numeric) AND (desconto >= (0)::numeric) AND (desconto <= subtotal) AND (total = ((subtotal + taxa_entrega) - desconto))))"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_criado_em_not_null",
+      "definicao": "NOT NULL criado_em"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_desconto_not_null",
+      "definicao": "NOT NULL desconto"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_id_not_null",
+      "definicao": "NOT NULL id"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_nome_cliente_not_null",
+      "definicao": "NOT NULL nome_cliente"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_pagamento_not_null",
+      "definicao": "NOT NULL pagamento"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_pago_not_null",
+      "definicao": "NOT NULL pago"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_recebimento_not_null",
+      "definicao": "NOT NULL recebimento"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_requisicao_hash_not_null",
+      "definicao": "NOT NULL requisicao_hash"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_status_not_null",
+      "definicao": "NOT NULL status"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_subtotal_not_null",
+      "definicao": "NOT NULL subtotal"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_taxa_entrega_not_null",
+      "definicao": "NOT NULL taxa_entrega"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_telefone_not_null",
+      "definicao": "NOT NULL telefone"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_token_hash_not_null",
+      "definicao": "NOT NULL token_hash"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_total_not_null",
+      "definicao": "NOT NULL total"
+    },
+    {
+      "tabela": "pedidos",
+      "nome": "pedidos_whatsapp_loja_not_null",
+      "definicao": "NOT NULL whatsapp_loja"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "PK_produtos",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "ck_produtos_preco_positivo",
+      "definicao": "CHECK ((preco > (0)::numeric))"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "produtos_ativo_not_null",
+      "definicao": "NOT NULL ativo"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "produtos_categoria_not_null",
+      "definicao": "NOT NULL categoria"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "produtos_descricao_not_null",
+      "definicao": "NOT NULL descricao"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "produtos_id_not_null",
+      "definicao": "NOT NULL id"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "produtos_imagem_not_null",
+      "definicao": "NOT NULL imagem"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "produtos_nome_not_null",
+      "definicao": "NOT NULL nome"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "produtos_preco_not_null",
+      "definicao": "NOT NULL preco"
+    },
+    {
+      "tabela": "produtos",
+      "nome": "produtos_removido_not_null",
+      "definicao": "NOT NULL removido"
+    },
+    {
+      "tabela": "sessoes_acesso",
+      "nome": "FK_sessoes_acesso_usuarios_usuario_id",
+      "definicao": "FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE"
+    },
+    {
+      "tabela": "sessoes_acesso",
+      "nome": "PK_sessoes_acesso",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "sessoes_acesso",
+      "nome": "sessoes_acesso_expira_em_not_null",
+      "definicao": "NOT NULL expira_em"
+    },
+    {
+      "tabela": "sessoes_acesso",
+      "nome": "sessoes_acesso_id_not_null",
+      "definicao": "NOT NULL id"
+    },
+    {
+      "tabela": "sessoes_acesso",
+      "nome": "sessoes_acesso_token_hash_not_null",
+      "definicao": "NOT NULL token_hash"
+    },
+    {
+      "tabela": "sessoes_acesso",
+      "nome": "sessoes_acesso_usuario_id_not_null",
+      "definicao": "NOT NULL usuario_id"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "FK_usos_cupom_cupons_cupom_id",
+      "definicao": "FOREIGN KEY (cupom_id) REFERENCES cupons(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "FK_usos_cupom_pedidos_pedido_id",
+      "definicao": "FOREIGN KEY (pedido_id) REFERENCES pedidos(id) ON DELETE CASCADE"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "FK_usos_cupom_usuarios_usuario_id",
+      "definicao": "FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE RESTRICT"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "PK_usos_cupom",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "usos_cupom_cupom_id_not_null",
+      "definicao": "NOT NULL cupom_id"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "usos_cupom_id_not_null",
+      "definicao": "NOT NULL id"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "usos_cupom_pedido_id_not_null",
+      "definicao": "NOT NULL pedido_id"
+    },
+    {
+      "tabela": "usos_cupom",
+      "nome": "usos_cupom_usuario_id_not_null",
+      "definicao": "NOT NULL usuario_id"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "PK_usuarios",
+      "definicao": "PRIMARY KEY (id)"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "ck_usuarios_perfil",
+      "definicao": "CHECK (((perfil)::text = ANY (ARRAY[('Cliente'::character varying)::text, ('Administrador'::character varying)::text])))"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "usuarios_ativo_not_null",
+      "definicao": "NOT NULL ativo"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "usuarios_criado_em_not_null",
+      "definicao": "NOT NULL criado_em"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "usuarios_falhas_login_not_null",
+      "definicao": "NOT NULL falhas_login"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "usuarios_id_not_null",
+      "definicao": "NOT NULL id"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "usuarios_nome_not_null",
+      "definicao": "NOT NULL nome"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "usuarios_perfil_not_null",
+      "definicao": "NOT NULL perfil"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "usuarios_senha_hash_not_null",
+      "definicao": "NOT NULL senha_hash"
+    },
+    {
+      "tabela": "usuarios",
+      "nome": "usuarios_telefone_not_null",
+      "definicao": "NOT NULL telefone"
+    }
+  ],
+  "arquitetura": "Aplicação web, API e banco PostgreSQL pimburguer_v2"
+}
